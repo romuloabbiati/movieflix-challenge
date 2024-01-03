@@ -1,5 +1,6 @@
 import { ReactComponent as MainImage } from 'assets/images/main-image.svg';
 import Navbar from "components/Navbar";
+import Login from 'pages/Admin/Login';
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
             <MainImage />
           </div>
           <div className="home-login-container">
-            <h1>Login</h1>
+            <Login />
           </div>
         </div>
       </div>
