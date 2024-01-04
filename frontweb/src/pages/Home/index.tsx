@@ -1,6 +1,7 @@
 import { ReactComponent as MainImage } from 'assets/images/main-image.svg';
 import Navbar from "components/Navbar";
 import Login from 'pages/Admin/Login';
+import './styles.css';
 
 const Home = () => {
   return (
