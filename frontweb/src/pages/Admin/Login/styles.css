@@ -1,0 +1,18 @@
+.login-card {
+    display:inline-block;
+    padding-top: 60px;
+}
+
+.login-card h1 {
+    padding-bottom: 25px;
+}
+
+
+.login-card form {
+    margin-top: 20px;
+}
+
+.base-input {
+    width: 260px;
+    height: 47px;
+}

@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-// import ButtonIcon from 'components/ButtonIcon';
+import ButtonIcon from 'components/ButtonIcon';
+// import { Link } from 'react-router-dom';
 
 
 import './styles.css';
@@ -18,17 +18,16 @@ const Login = () => {
             name="username"
           />
         </div>
-        <div className="mb-2">
+        <div className="mb-2 password-input">
           <input
             type="password"
-            className="form-control base-input "
+            className="form-control base-input"
             placeholder="Password"
             name="password"
           />
         </div>
         <div className="login-submit">
-            <button type="submit">Fazer Login</button>
-          {/* <ButtonIcon text="Fazer login" /> */}
+            <ButtonIcon />
         </div>
       </form>
     </div>
