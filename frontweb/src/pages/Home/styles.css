@@ -17,6 +17,7 @@
 
 .home-login-container h1 {
     font-size: 1em;
+    font-weight: 400;
 }
 
 .home-card {
@@ -36,9 +37,37 @@
     font-size: 0.6em;
 }
 
-.home-content-image-container h1 {
+@media (min-width: 576px) {
+    .home-container {
+        padding: 40px 48px 182px 48px;
+        font-size: 48px;
+    }
 
+    .home-login-container {
+        padding: 0px 17px 133px 17px;
+    }
 }
+
+@media (min-width: 768px) {
+    .home-container {
+        padding: 40px 144px 304px 145px;
+    }
+
+    .home-login-container {
+        padding: 0px 17px 133px 17px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home-content-image-container svg {
+        width: 100%;
+        /* width TBC */
+    }
+}
+
+/* .home-content-image-container h1 {
+    verificar o que isso aqui estava fazendo +- aula 7-21
+} */
 
 /* .home-content-image-container svg {
     width: 100%; aula 7-20
