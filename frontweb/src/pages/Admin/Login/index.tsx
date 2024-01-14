@@ -22,7 +22,7 @@ const Login = () => {
           <input
             type="password"
             className="form-control base-input"
-            placeholder="Password"
+            placeholder="Senha"
             name="password"
           />
         </div>

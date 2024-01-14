@@ -10,9 +10,13 @@ const Home = () => {
       <div className="home-container">
         <div className="home-card">
           <div className="home-content-image-container">
-            <h1>Avalie Filmes</h1>
-            <p>Diga o que você achou do seu filme favorito</p>
-            <MainImage />
+            <div className='content-container'>
+              <h1>Avalie Filmes</h1>
+              <p>Diga o que você achou do seu filme favorito</p>
+            </div>
+            <div className='home-image'>
+              <MainImage />
+            </div>
           </div>
           <div className="home-login-container">
             <Login />
