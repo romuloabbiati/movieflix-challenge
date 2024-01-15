@@ -7,7 +7,7 @@ import './styles.css';
 
 const Login = () => {
   return (
-    <div className="base-card login-card">
+    <div className="login-card">
       <h1>LOGIN</h1>
       <form>
         <div className="mb-4">
