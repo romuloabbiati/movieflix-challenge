@@ -29,6 +29,12 @@ const Login = () => {
         <div className="login-submit">
             <ButtonIcon />
         </div>
+        {/* The comment below might be the right 
+        way of configuring the ButtonIcon with 
+        react-router-dom - lecture 7-28*/}
+        {/* <Link to="/movies">
+          <ButtonIcon />
+        </Link> */}
       </form>
     </div>
   );

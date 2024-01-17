@@ -1,12 +1,10 @@
 import './assets/styles/custom.scss';
 import './App.css';
-import Home from 'pages/Home';
-import MovieList from 'pages/MovieList';
+import Routes from 'Routes';
 
 function App() {
   return (
-    // <Home />
-    <MovieList />
+    <Routes />
   );
 }
 
