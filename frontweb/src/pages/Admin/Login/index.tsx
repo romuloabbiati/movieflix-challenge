@@ -27,7 +27,7 @@ const Login = () => {
           />
         </div>
         <div className="login-submit">
-            <ButtonIcon />
+            <ButtonIcon text="Fazer login" />
         </div>
         {/* The comment below might be the right 
         way of configuring the ButtonIcon with 

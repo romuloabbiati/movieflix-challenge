@@ -7,6 +7,10 @@
     I need to try to use it in a different component */
 }
 
+.btn-icon h6 {
+    text-transform: uppercase;
+}
+
 @media (min-width: 576px) {
     .btn-icon {
         width: 384px;
