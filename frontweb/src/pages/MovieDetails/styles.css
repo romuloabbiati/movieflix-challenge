@@ -7,6 +7,7 @@
 .movie-details-container h1 {
   font-size: 1em;
   margin-bottom: 18px;
+  width: 265px;
 }
 
 .movie-review-input-card {
@@ -47,4 +48,64 @@
   font-size: 0.66em;
   padding: 10px 28px 21px 12px;
   text-align: justify;
+}
+
+@media (min-width: 576px) {
+  .movie-details-container {
+    padding: 40px 48px 20px 49px;
+    font-size: 32px;
+  }
+
+  .movie-details-container h1 {
+    width: 450px;
+  }
+
+  .movie-review-input-card {
+    padding: 30px 20px;
+    margin-bottom: 22px;
+  }
+
+  .movie-reviews-card {
+    padding: 30px 20px 30px 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .movie-details-container {
+    padding: 70px 60px 40px 62px;
+    font-size: 38px;
+  }
+
+  .movie-details-container h1 {
+    width: 520px;
+  }
+
+  .movie-review-input-card {
+    padding: 45px 28px;
+    margin-bottom: 28px;
+  }
+
+  .movie-reviews-card {
+    padding: 45px 28px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .movie-details-container {
+    padding: 40px 36px 40px 36px;
+    font-size: 48px;
+  }
+
+  .movie-details-container h1 {
+    width: 720px;
+  }
+
+  .movie-review-input-card {
+    padding: 24px 33px 24px 17px;
+    margin-bottom: 29px;
+  }
+
+  .movie-reviews-card {
+    padding: 15px 20px 36px 17px;
+  }
 }

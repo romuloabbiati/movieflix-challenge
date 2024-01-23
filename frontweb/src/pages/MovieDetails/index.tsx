@@ -23,6 +23,12 @@ const MovieDetails = () => {
 
         <h3>⭐️ Maria Silva</h3>
         <p>Gostei muito do filme. Foi muito bom mesmo. Pena que durou pouco.</p>
+
+        <h3>⭐️ Maria Silva</h3>
+        <p>Gostei muito do filme. Foi muito bom mesmo. Pena que durou pouco.</p>
+
+        <h3>⭐️ Maria Silva</h3>
+        <p>Gostei muito do filme. Foi muito bom mesmo. Pena que durou pouco.</p>
       </div>
     </div>
   );
