@@ -17,6 +17,7 @@
 .home-login-container h1 {
     font-size: 1em;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 .home-content-image-container p {

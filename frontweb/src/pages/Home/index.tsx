@@ -1,6 +1,5 @@
 import { ReactComponent as MainImage } from 'assets/images/main-image.svg';
-import Login from 'pages/Admin/Login';
-import { Link } from 'react-router-dom';
+import Login from 'pages/Home/Login';
 import './styles.css';
 
 const Home = () => {
