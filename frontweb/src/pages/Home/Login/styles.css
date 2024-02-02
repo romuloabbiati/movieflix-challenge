@@ -15,6 +15,7 @@
 .base-input {
     width: 260px;
     height: 47px;
+    color: #263238;
 }
 
 @media (min-width: 576px) {

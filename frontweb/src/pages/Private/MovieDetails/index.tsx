@@ -1,9 +1,22 @@
+import axios from 'axios';
 import ButtonIcon from 'components/ButtonIcon';
+import { Movie } from 'types/movie';
+import { BASE_URL } from 'util/requests';
 import './styles.css';
 
 
 // this code was done based on the lecture 08-08 section 2
 const MovieDetails = () => {
+
+  // FORMA INCORRETA
+  let movie : Movie;
+
+  // FORMA INCORRETA
+  axios.get(BASE_URL + '/movies/1')
+    .then(response => {
+      console.log(response.data);
+    });
+
   return (
     <div className="movie-details-container">
       <h1>Tela detalhes do filme id: 1</h1>

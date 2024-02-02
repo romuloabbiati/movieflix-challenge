@@ -9,18 +9,17 @@
     "@types/jest": "^26.0.15",
     "@types/jwt-decode": "^3.1.0",
     "@types/node": "^12.0.0",
-    "@types/qs": "^6.9.7",
+    "@types/qs": "^6.9.11",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-paginate": "^7.1.1",
     "@types/react-router-dom": "^5.1.7",
     "@types/react-select": "^4.0.17",
-    "axios": "^0.21.1",
+    "axios": "^1.6.7",
     "bootstrap": "^5.0.2",
     "jwt-decode": "^3.1.2",
     "msw": "^0.33.2",
-    "node-sass": "4.14.1",
-    "qs": "^6.10.1",
+    "qs": "^6.11.2",
     "react": "^17.0.2",
     "react-content-loader": "^6.0.3",
     "react-currency-input-field": "^3.4.2",
@@ -59,5 +58,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "sass": "^1.70.0"
   }
 }
