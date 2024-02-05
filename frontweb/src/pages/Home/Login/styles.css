@@ -1,11 +1,15 @@
 .login-card {
     display:inline-block;
     padding-top: 60px;
-    /* font-size: 36px; */
 }
 
 .login-card h1 {
     padding-bottom: 25px;
+    font-size: 1em;
+}
+
+.alert-css {
+    font-size: 0.4444em;
 }
 
 
@@ -17,6 +21,7 @@
     width: 260px;
     height: 47px;
     color: #263238;
+    font-size: 0.4444em;
 }
 
 @media (min-width: 576px) {
