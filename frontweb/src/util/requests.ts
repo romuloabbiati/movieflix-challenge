@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios, { AxiosRequestConfig } from 'axios';
 import qs from 'qs';
 
 type LoginResponse = {
@@ -53,3 +53,8 @@ export const getAuthData = () => {
   const str = localStorage.getItem(tokenKey) ?? '{}';
   return JSON.parse(str) as LoginResponse;
 };
+
+export const requestBackend = (config: AxiosRequestConfig) => {
+  return axios({...config, baseURL: BASE_URL});
+};
+// NAO SEI SE AINDA VOU USAR A FC requestBackend lecture 09-18
