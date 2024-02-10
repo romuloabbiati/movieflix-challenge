@@ -58,3 +58,22 @@ export const requestBackend = (config: AxiosRequestConfig) => {
   return axios({...config, baseURL: BASE_URL});
 };
 // NAO SEI SE AINDA VOU USAR A FC requestBackend lecture 09-18
+
+
+// Add a request interceptor
+axios.interceptors.request.use(function (config) {
+  console.log('INTERCEPTOR ANTES DA REQUISICAO');
+  return config;
+}, function (error) {
+  console.log('INTERCEPTOR ERRO NA REQUISICAO');
+  return Promise.reject(error);
+});
+
+// Add a response interceptor
+axios.interceptors.response.use(function (response) {
+  console.log('INTERCEPTOR RESPOSTA COM SUCESSO');
+  return response;
+}, function (error) {
+  console.log('INTERCEPTOR RESPOSTA COM ERRO');
+  return Promise.reject(error);
+});
