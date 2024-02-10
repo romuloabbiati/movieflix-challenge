@@ -1,5 +1,6 @@
 import axios, { AxiosRequestConfig } from 'axios';
 import qs from 'qs';
+import history from './history';
 
 type LoginResponse = {
   access_token: string,
@@ -62,18 +63,20 @@ export const requestBackend = (config: AxiosRequestConfig) => {
 
 // Add a request interceptor
 axios.interceptors.request.use(function (config) {
-  console.log('INTERCEPTOR ANTES DA REQUISICAO');
+  //
   return config;
 }, function (error) {
-  console.log('INTERCEPTOR ERRO NA REQUISICAO');
+  //
   return Promise.reject(error);
 });
 
 // Add a response interceptor
 axios.interceptors.response.use(function (response) {
-  console.log('INTERCEPTOR RESPOSTA COM SUCESSO');
+  //
   return response;
 }, function (error) {
-  console.log('INTERCEPTOR RESPOSTA COM ERRO');
+  if(error.response.status === 401 || error.response.status === 403) {
+    history.push('/');
+  }
   return Promise.reject(error);
 });
