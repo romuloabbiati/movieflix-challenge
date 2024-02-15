@@ -2,7 +2,8 @@ import Navbar from 'components/Navbar';
 import Home from 'pages/Home';
 import MovieDetails from 'pages/Private/MovieDetails';
 import MovieList from 'pages/Private/MovieList';
-import { Router, Route, Switch } from 'react-router-dom';
+import { Route, Router, Switch } from 'react-router-dom';
+import PrivateRoute from 'components/PrivateRoute';
 import history from 'util/history';
 
 const Routes = () => {
@@ -15,12 +16,15 @@ const Routes = () => {
         </Route>
         {/* usar PrivateRoute para encapsular 
         MovieList e MovieDetails */}
-        <Route path="/movies" exact>
-          <MovieList />
-        </Route>
-        <Route path="/movies/:movies">
-          <MovieDetails />
-        </Route>
+        
+        <PrivateRoute path='/movies'>
+          <Route path="/movies" exact>
+            <MovieList />
+          </Route>
+          <Route path="/movies/:movieId">
+            <MovieDetails />
+          </Route>
+        </PrivateRoute>
       </Switch>
     </Router>
   );
