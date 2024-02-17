@@ -41,7 +41,7 @@ const Navbar = () => {
                     <h4>MovieFlix</h4>
                 </Link>
 
-                <div>
+                <div className='nav-logout'>
                     {authData.authenticated ? (
                         <a href="#SAIR" onClick={handleLogoutClick}>
                             SAIR

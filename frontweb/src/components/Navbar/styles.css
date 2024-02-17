@@ -7,3 +7,35 @@
     height: 70px;
     padding-left: 40px;
 }
+
+.nav-logout {
+    border: 1px solid #000;
+    border-radius: 10px;
+    color: #000;
+    height: 30px;
+    width: 100px;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 14px;
+}
+
+@media (min-width: 576px) {
+    .nav-logout {
+        margin-right: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav-logout {
+        margin-right: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav-logout {
+        margin-right: 32px;
+    }
+}
