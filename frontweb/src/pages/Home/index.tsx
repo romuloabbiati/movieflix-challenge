@@ -1,10 +1,15 @@
 import { ReactComponent as MainImage } from 'assets/images/main-image.svg';
 import Login from 'pages/Home/Login';
+import { hasAnyRoles } from 'util/requests';
 import './styles.css';
 
 const Home = () => {
   return (
     <div className="home-container">
+      <h1>
+        Resultado ={' '}
+        {hasAnyRoles(['ROLE_MEMBER', 'ROLE_VISITOR']) ? 'sim' : 'nao'}
+      </h1>
 
       <div className="home-card">
         <div className="home-content-image-container">
