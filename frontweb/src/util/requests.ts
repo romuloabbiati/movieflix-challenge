@@ -123,12 +123,16 @@ export const hasAnyRoles = (roles : Role[]) : boolean => {
   const tokenData = getTokenData();
 
   if(tokenData !== undefined) {
-    for(var i = 0; i < roles.length; i++) {
-      if(tokenData.authorities.includes(roles[i])) {
-        return true;
-      }
-    }
+    return roles.some(role => tokenData.authorities.includes(role));
   }
+
+  // if(tokenData !== undefined) {
+  //   for(var i = 0; i < roles.length; i++) {
+  //     if(tokenData.authorities.includes(roles[i])) {
+  //       return true;
+  //     }
+  //   }
+  // }
 
   return false;
 };
