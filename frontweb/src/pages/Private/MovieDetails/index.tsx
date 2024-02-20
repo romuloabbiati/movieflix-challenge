@@ -1,7 +1,7 @@
 import axios from 'axios';
 import ButtonIcon from 'components/ButtonIcon';
 import { Movie } from 'types/movie';
-import { BASE_URL } from 'util/requests';
+import { BASE_URL, hasAnyRoles } from 'util/requests';
 import './styles.css';
 
 
@@ -9,18 +9,19 @@ import './styles.css';
 const MovieDetails = () => {
 
   // FORMA INCORRETA
-  let movie : Movie;
+  // let movie : Movie;
 
   // FORMA INCORRETA
-  axios.get(BASE_URL + '/movies/1')
-    .then(response => {
-      console.log(response.data);
-    });
+  // axios.get(BASE_URL + '/movies/1')
+  //   .then(response => {
+  //     console.log(response.data);
+  //   });
 
   return (
     <div className="movie-details-container">
       <h1>Tela detalhes do filme id: 1</h1>
-      <div className="movie-review-input-card base-card">
+      {hasAnyRoles(['ROLE_MEMBER']) &&
+        <div className="movie-review-input-card base-card">
         {/* <div> */}
           <input 
             type="text" 
@@ -30,6 +31,8 @@ const MovieDetails = () => {
         {/* </div> */}
         <ButtonIcon text="Salvar avaliação" />
       </div>
+      }
+      
       <div className="movie-reviews-card base-card">
         <h3>⭐️ Maria Silva</h3>
         <p>Gostei muito do filme. Foi muito bom mesmo. Pena que durou pouco.</p>
