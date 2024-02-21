@@ -1,7 +1,8 @@
 import axios from 'axios';
 import ButtonIcon from 'components/ButtonIcon';
-import { Movie } from 'types/movie';
-import { BASE_URL, hasAnyRoles } from 'util/requests';
+// import { Movie } from 'types/movie';
+import { hasAnyRoles } from 'util/auth';
+// import { BASE_URL } from 'util/requests';
 import './styles.css';
 
 
